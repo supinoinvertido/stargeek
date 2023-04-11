@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "m";
+}
+
+main{
+    grid-area: m;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+body{
+    background-image: url(fotos/Rows\ of\ red\ seats\ in\ a\ theater.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header p{
+    font-weight: 400;
+    font-size: 96px;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form > input{
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 32px;
+    padding-left: 20px;
+}
+
+input[type="submit"]{
+    left: 22.67%;
+right: 17.37%;
+top: 0%;
+bottom: 0%;
+height: 100px;
+width: 225px;
+font-weight: 400;
+font-size: 36px;
+line-height: 44px;
+
+background: #FF0000;
+box-shadow: 10px 10px 4px rgba(255, 255, 255, 0.25);
+border-radius: 20px;
+}
+
+@media (max-width: 500px){
+
+    body{
+        background-image: none;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px auto;
+        grid-template-areas: 
+        "f"
+        "m";
+    }
+
+    .topo{
+        grid-area: f;
+        background-image: url(fotos/bgmb.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    header p{
+        color: black;
+    }
+    }

@@ -1,0 +1,77 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(fotos/nebulous.png);
+    background-repeat:repeat;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+}
+
+.cards{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card > img{
+    max-width: 300px;
+}
+.titulo{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+.info{
+    background-color: black;
+    display: flex;
+    color: white;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 300px;
+}
+.info > a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 100%;
+
+}
+main > p{
+    color: white;
+    font-size: 3rem;
+    padding-top: 40px;
+    text-align: center;
+}
+main > a{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+#btn{
+    background-color: rgb(186, 182, 182);
+    color: black;
+    border-radius: 50px;
+}

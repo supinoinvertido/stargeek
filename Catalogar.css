@@ -1,0 +1,39 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(fotos/water\ galaxy.png);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    row-gap: 10px;
+    width: 350px;
+}
+
+form > fieldset >label{
+    font-size: 2rem;
+}
+form > fieldset > input,form > fieldset > select{
+    min-width: 270PX;
+    min-height: 50px;
+    font-size: 1.5rem;
+}
+
+input[type="submit"] {
+width: 266px;
+height: 66px;
+}
