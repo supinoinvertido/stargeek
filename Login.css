@@ -52,7 +52,7 @@ form > input{
 
 input[type="submit"]{
     left: 22.67%;
-right: 17.37%;
+right: 25.37%;
 top: 0%;
 bottom: 0%;
 height: 100px;
@@ -83,7 +83,7 @@ border-radius: 20px;
 
     .topo{
         grid-area: f;
-        background-image: url(fotos/cinema.png);
+        background-image: url(fotos/bgmb.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
