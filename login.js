@@ -5,10 +5,19 @@ const senha = document.getElementById("msenha");
 
 formulario.onsubmit = (evento) => {
     let dados = JSON.parse(localStorage.getItem("dados"));
-
+    let logado;
     dados.forEach((elemento) => {
         if (elemento.email === email.value && elemento.senha === senha.value) {
+
             evento.preventDefault();
+            let dados = JSON.parse(sessionStorage.getItem("logado")) || [];
+            dados.push(
+            {
+                email : email.value
+            }
+        )
+        sessionStorage.setItem("logado", JSON.stringify(dados));
+
            window.location.assign ("Catalogo.html");
 
             return true;

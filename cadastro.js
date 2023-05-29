@@ -39,3 +39,4 @@ formulario.onsubmit = (evento) =>{
         window.location.assign("Login.html");
     }, 3000);
 }
+
