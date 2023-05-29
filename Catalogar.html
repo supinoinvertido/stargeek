@@ -12,7 +12,7 @@
      <header>
         <img src="fotos/Cadastro.png" alt="">
     </header>
-                <form action="Catalogo.html">
+                <form >
                 <fieldset>
                     <label>Nome do título</label>
                     <input type="text" name="tnome" id="inome" placeholder="Digite o nome do título">
@@ -23,13 +23,14 @@
                     <option value="S">Serie</option>
                     <option value="A">Anime</option>
                     <option value="L">Livro</option>
-                    <label for="iresumo">Faça um resumo </label>
+                    <label for="iresumo" id="tresumo">Faça um resumo </label>
                     <br>
                     <textarea name="txtresumo" id="iresumo" cols="40" rows="25" placeholder="Digite o resumo"></textarea>
-                    <input type="file" name="" id="">
-                    <input type="submit" value="Catalogar">
+                    <input type="file" name="" id="ifoto">
+                    <input type="submit" id="icatalogo" value="Catalogar">
                 </fieldset>
                 </form>
     </div>
+    <script src="catalogar.js"></script>
 </body>
 </html>
